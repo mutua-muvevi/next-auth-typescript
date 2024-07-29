@@ -10,7 +10,7 @@ import { table } from "./components/table";
 import { alert } from "./components/alert";
 import { badge } from "./components/badge";
 import { paper } from "./components/paper";
-import { radio } from "./components/radio";
+import { radio } from "./components/radio.ts";
 import { appBar } from "./components/appbar";
 import { drawer } from "./components/drawer";
 import { dialog } from "./components/dialog";
