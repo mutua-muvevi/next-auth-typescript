@@ -6,7 +6,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 
 import { localStorageGetItem } from "@/utils/storage_available";
 
-import { defaultLang } from "./config-lang";
+import { defaultLang } from "./config_lang";
 import translationEn from "./langs/en.json";
 import translationEs from "./langs/es.json";
 import translationFr from "./langs/fr.json";

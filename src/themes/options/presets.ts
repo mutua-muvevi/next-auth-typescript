@@ -15,6 +15,23 @@ interface PresetOptions {
 	value: string;
 }
 
+export const createPresets = (preset : any) => {
+	const primaryColor = getPrimary(preset);
+
+	const theme = {
+		palette: {
+			primary: primaryColor,
+		},
+		customShadows: {
+			primary: `0 8px 16px 0 ${alpha(`${primaryColor?.main}`, 0.24)}`,
+		},
+	};
+
+	return {
+		...theme,
+	};
+};
+
 const cyan: Color = {
 	lighter: "#CCF4FE",
 	light: "#68CDF9",

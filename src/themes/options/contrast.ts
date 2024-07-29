@@ -4,7 +4,7 @@ import { customShadows } from "../custom_shadows";
 // ----------------------------------------------------------------------
 
 
-export const createContrast = (contrast : string, mode : string) => {
+export const createContrast = (contrast : string, mode : any) => {
 	const theme = {
 		...(contrast === "bold" &&
 			mode === "light" && {
