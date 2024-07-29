@@ -1,0 +1,45 @@
+{
+	"auth": {
+		"login": {
+			"labels": {
+				"title": "ログイン",
+				"meta": "アカウントにログイン",
+				"link": "パスワードを忘れた場合?",
+				"createAccount": "アカウントをお持ちではありませんか？"
+			},
+			"form": {
+				"email": {
+					"placeholder": "email@example.com",
+					"label": "メールアドレス",
+					"error": "有効なメールアドレスを入力してください"
+				},
+				"password": {
+					"placeholder": "Password123",
+					"label": "パスワード",
+					"error": "有効なパスワードを入力してください"
+				},
+				"button": "ログイン"
+			}
+		},
+		"register": {
+			"labels": {
+				"title": "登録",
+				"meta": "新しいアカウントを作成",
+				"link": "すでにアカウントをお持ちですか？"
+			},
+			"form": {
+				"email": {
+					"placeholder": "email@example.com",
+					"label": "メールアドレス",
+					"error": "有効なメールアドレスを入力してください"
+				},
+				"password": {
+					"placeholder": "Password123",
+					"label": "パスワード",
+					"error": "有効なパスワードを入力してください"
+				},
+				"button": "登録"
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+{
+	"auth": {
+		"login": {
+			"labels": {
+				"title": "تسجيل الدخول",
+				"meta": "سجّل الدخول إلى حسابك",
+				"link": "نسيت كلمة المرور؟",
+				"createAccount": "ليس لديك حساب؟"
+			},
+			"form": {
+				"email": {
+					"placeholder": "email@example.com",
+					"label": "عنوان البريد الإلكتروني",
+					"error": "يرجى إدخال عنوان بريد إلكتروني صالح"
+				},
+				"password": {
+					"placeholder": "Password123",
+					"label": "كلمة المرور",
+					"error": "يرجى إدخال كلمة مرور صالحة"
+				},
+				"button": "تسجيل الدخول"
+			}
+		},
+		"register": {
+			"labels": {
+				"title": "إنشاء حساب",
+				"meta": "إنشاء حساب جديد",
+				"link": "هل لديك حساب بالفعل؟"
+			},
+			"form": {
+				"email": {
+					"placeholder": "email@example.com",
+					"label": "عنوان البريد الإلكتروني",
+					"error": "يرجى إدخال عنوان بريد إلكتروني صالح"
+				},
+				"password": {
+					"placeholder": "Password123",
+					"label": "كلمة المرور",
+					"error": "يرجى إدخال كلمة مرور صالحة"
+				},
+				"button": "إنشاء حساب"
+			}
+		}
+	}
+}

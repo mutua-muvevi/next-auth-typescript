@@ -1,0 +1,45 @@
+{
+	"auth": {
+		"login": {
+			"labels": {
+				"title": "登录",
+				"meta": "登录到您的账户",
+				"link": "忘记密码？",
+				"createAccount": "没有账户？"
+			},
+			"form": {
+				"email": {
+					"placeholder": "email@example.com",
+					"label": "电子邮件地址",
+					"error": "请输入有效的电子邮件地址"
+				},
+				"password": {
+					"placeholder": "Password123",
+					"label": "密码",
+					"error": "请输入有效的密码"
+				},
+				"button": "登录"
+			}
+		},
+		"register": {
+			"labels": {
+				"title": "注册",
+				"meta": "创建一个新账户",
+				"link": "已有账户？"
+			},
+			"form": {
+				"email": {
+					"placeholder": "email@example.com",
+					"label": "电子邮件地址",
+					"error": "请输入有效的电子邮件地址"
+				},
+				"password": {
+					"placeholder": "Password123",
+					"label": "密码",
+					"error": "请输入有效的密码"
+				},
+				"button": "注册"
+			}
+		}
+	}
+}
