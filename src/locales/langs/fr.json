@@ -1,0 +1,46 @@
+{
+	"auth": {
+		"login": {
+			"labels": {
+				"title": "Se connecter",
+				"meta": "Connectez-vous à votre compte",
+				"link": "Mot de passe oublié?",
+				"createAccount": "Vous n'avez pas de compte ?"
+			},
+			"form": {
+				"email": {
+					"placeholder": "email@example.com",
+					"label": "Adresse e-mail",
+					"error": "S'il vous plaît, mettez une adresse email valide"
+				},
+				"password": {
+					"placeholder": "Password123",
+					"label": "Password",
+					"error": "Entrer un mot de passe valide s'il vous plait"
+				},
+				"button": "Se connecter"
+
+			}
+		},
+		"register": {
+			"labels": {
+				"title": "Register",
+				"meta": "Create a new account",
+				"link": "Already have an account?"
+			},
+			"form": {
+				"email": {
+					"placeholder": "email@example.com",
+					"label": "S'il vous plaît, mettez une adresse email valide",
+					"error": "Please enter a valid email address"
+				},
+				"password": {
+					"placeholder": "Password123",
+					"label": "Password",
+					"error": "Entrer un mot de passe valide s'il vous plait"
+				},
+				"button": "Registre"
+			}
+		}
+	}
+}
