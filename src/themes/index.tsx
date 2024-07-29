@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
-import { Box } from "@mui/material";
+import merge from 'lodash/merge';
 
 const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
 	return (

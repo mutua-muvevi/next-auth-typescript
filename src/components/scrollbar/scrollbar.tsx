@@ -6,7 +6,7 @@ import { StyledScrollbar, StyledRootScrollbar } from "./styles";
 
 interface ScrollbarProps {
 	children: React.ReactNode;
-	sx: object;
+	sx?: object;
 }
 
 const Scrollbar = forwardRef(
