@@ -18,7 +18,7 @@
     "@mui/material-nextjs": "^5.16.4",
     "@mui/x-data-grid": "6.18.4",
     "@mui/x-date-pickers": "6.18.4",
-    "apexcharts": "^3.51.0",
+    "apexcharts": "^3.44.2",
     "autosuggest-highlight": "^3.3.4",
     "axios": "^1.7.2",
     "date-fns": "2.30",
