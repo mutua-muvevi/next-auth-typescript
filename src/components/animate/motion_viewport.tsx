@@ -38,9 +38,4 @@ const MotionViewport = ({
 	);
 };
 
-MotionViewport.propTypes = {
-	children: PropTypes.node,
-	disableAnimatedMobile: PropTypes.bool,
-};
-
 export default MotionViewport;
