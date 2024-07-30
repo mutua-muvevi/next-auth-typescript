@@ -4,7 +4,7 @@ import merge from "lodash/merge";
 
 //date fns
 import {
-	ar as arAdapter,
+	arSA as arAdapter,
 	zhCN as zhCNAdapter,
 	enUS as enUSAdapter,
 	es as esESAdapter,
