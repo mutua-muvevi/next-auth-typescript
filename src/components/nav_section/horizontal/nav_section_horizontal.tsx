@@ -19,7 +19,7 @@ const Group = ({ items, slotProps }: GroupProps) => {
 			))}
 		</>
 	);
-}
+};
 
 // ----------------------------------------------------------------------
 
@@ -58,12 +58,6 @@ const NavSectionHorizontal = ({
 			))}
 		</Stack>
 	);
-};
-
-NavSectionHorizontal.propTypes = {
-	data: PropTypes.array,
-	sx: PropTypes.object,
-	slotProps: PropTypes.object,
 };
 
 export default memo(NavSectionHorizontal);

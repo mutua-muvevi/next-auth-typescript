@@ -49,8 +49,3 @@ const NavSectionMini = ({ data, slotProps, ...other }: NavSectionMiniProps) => {
 export default memo(NavSectionMini);
 
 // ----------------------------------------------------------------------
-
-Group.propTypes = {
-	items: PropTypes.array,
-	slotProps: PropTypes.object,
-};
