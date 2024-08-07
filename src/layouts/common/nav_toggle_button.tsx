@@ -60,6 +60,7 @@ const NavToggleButton = ({ sx, ...other } : NavToggleButtonProps) => {
 						: "eva:arrow-ios-forward-fill"
 				}
 			/>
+			
 		</IconButton>
 	);
 }

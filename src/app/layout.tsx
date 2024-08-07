@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
@@ -7,6 +8,9 @@ import { SettingsDrawer, SettingsProvider } from "@/components/settings";
 
 import ThemeProvider from "@/themes";
 import { primaryFont } from "@/themes/typography";
+import { MotionLazy } from "@/components/animate/motion_lazy";
+import { SnackbarProvider } from "@/components/snackbar";
+import ProgressBar from "@/components/progress_bar/progress_bar";
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -31,7 +35,13 @@ export default function RootLayout({
 						}}
 					>
 						<ThemeProvider>
-							{children}
+							<MotionLazy>
+								<SnackbarProvider>
+									<SettingsDrawer />
+									<ProgressBar/>
+									{children}
+								</SnackbarProvider>
+							</MotionLazy>
 						</ThemeProvider>
 					</SettingsProvider>
 				</LocalizationProvider>

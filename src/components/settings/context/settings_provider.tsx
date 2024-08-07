@@ -45,12 +45,12 @@ export const SettingsProvider = ({
 
 	// drawer
 	const onToggleDrawer = useCallback(() => {
-		setOpenDrawer((prev : any) => !prev);
+		setOpenDrawer((prev: any) => !prev);
 	}, []);
 
 	const onCloseDrawer = useCallback(() => {
-		setOpenDrawer(false)
-	}, [])
+		setOpenDrawer(false);
+	}, []);
 
 	const canReset = !isEqual(state, defaultSettings);
 
@@ -76,11 +76,13 @@ export const SettingsProvider = ({
 			openDrawer,
 			onCloseDrawer,
 			onToggleDrawer,
-			onChangeDirectionByLang
+			onChangeDirectionByLang,
 		]
-	)
+	);
 
 	return (
-		<SettingsContext.Provider value={memoizedValue}>{children}</SettingsContext.Provider>
+		<SettingsContext.Provider value={memoizedValue}>
+			{children}
+		</SettingsContext.Provider>
 	);
 };

@@ -3,13 +3,13 @@ import Typography from "@mui/material/Typography";
 
 // ----------------------------------------------------------------------
 
-interface SearchNotFoundPropTypes {
+interface SearchNotFoundProps {
 	query: string;
 	sx?: object;
 	[key: string]: any;
 }
 
-const SearchNotFound = ({ query, sx, ...other }: SearchNotFoundPropTypes) => {
+const SearchNotFound = ({ query, sx, ...other }: SearchNotFoundProps) => {
 	return query ? (
 		<Paper
 			sx={{
