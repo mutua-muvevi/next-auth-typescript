@@ -1,11 +1,9 @@
-import { Box, Typography } from "@mui/material";
+import HomeView from "@/sections/home/home";
+
+
 
 const Home = () => {
-	return (
-		<Box sx={{backgroundColor: "green"}}>
-			<Typography variant="h3">Hello World</Typography>
-		</Box>
-	);
+	return <HomeView/>
 };
 
 export default Home;

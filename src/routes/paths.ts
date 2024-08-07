@@ -43,7 +43,7 @@ export const paths = {
 		articles: `${ROOTS.PUBLIC}/articles`,
 		article_detail: (slug: string) => `${ROOTS.PUBLIC}/article/${paramCase(slug)}`,
 
-		faq: `${ROOTS.PUBLIC}/faq`,
+		faqs: `${ROOTS.PUBLIC}/faqs`,
 		about: `${ROOTS.PUBLIC}/about`,
 		contact: `${ROOTS.PUBLIC}/contact`,
 		products: `${ROOTS.PUBLIC}/products`,
