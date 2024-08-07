@@ -44,7 +44,7 @@ export const navConfig = [
 	},
 	{
 		title: "articles",
-		icon: <Iconify icon="" />,
+		icon: <Iconify icon="ph:article-medium-fill" />,
 		path: paths.public.articles,
 	},
 	// {
