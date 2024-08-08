@@ -1,4 +1,3 @@
-/* eslint-disable perfectionist/sort-imports */
 import "@/utils/highlight";
 
 // markdown plugins
