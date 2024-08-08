@@ -12,7 +12,8 @@ function PlanFreeIcon({ ...other }) {
 
 	const PRIMARY_DARK = theme.palette.primary.dark;
 
-	const PRIMARY_DARKER = theme.palette.primary.darker;
+	const PRIMARY_DARKER = theme.palette.primary?.dark;
+	// const PRIMARY_DARKER = theme.palette.primary?.darker;
 
 	return (
 		<Box
