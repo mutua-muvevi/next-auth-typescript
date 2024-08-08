@@ -23,17 +23,17 @@ export const useNavData = () => {
 					{
 						title: "Users",
 						path: paths.admin.users,
-						icon: <Iconify icon="lets-icons:home-duotone" />
+						icon: <Iconify icon="teenyicons:users-solid" />
 					},
 					{
 						title: "Marketing",
 						path: paths.admin.marketing,
-						icon: <Iconify icon="lets-icons:home-duotone" />
+						icon: <Iconify icon="icon-park-solid:market-analysis" />
 					},
 					{
 						title: "Finance",
 						path: paths.admin.finance,
-						icon: <Iconify icon="lets-icons:home-duotone" />
+						icon: <Iconify icon="solar:wallet-money-bold-duotone" />
 					},
 				]
 			}
