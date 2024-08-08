@@ -1,4 +1,4 @@
-import HomeView from "@/sections/home/home";
+import HomeView from "@/sections/public/home/home";
 
 
 
