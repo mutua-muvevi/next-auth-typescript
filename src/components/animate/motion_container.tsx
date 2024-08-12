@@ -10,6 +10,7 @@ interface MotionContainerProps {
 	animate?: boolean;
 	action?: boolean;
 	children: React.ReactNode;
+	[key : string]: any
 }
 
 const MotionContainer = ({
