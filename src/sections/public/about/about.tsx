@@ -6,7 +6,7 @@ import ScrollProgress from "@/components/scroll_progress";
 import MainLayout from "@/layouts/public";
 import { Box } from "@mui/material";
 
-const HomeView = () => {
+const About = () => {
 	const { scrollYProgress } = useScroll();
 
 	return (
@@ -18,13 +18,12 @@ const HomeView = () => {
 					overflow: "hidden",
 					position: "relative",
 					bgcolor: "background.default",
-					height: "100vh",
 				}}
 			>
-				Homepage
+				About page
 			</Box>
 		</MainLayout>
 	);
 };
 
-export default HomeView;
+export default About;

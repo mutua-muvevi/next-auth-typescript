@@ -38,7 +38,7 @@ export const SettingsProvider = ({
 	//direction by language
 	const onChangeDirectionByLang = useCallback(
 		(lang: string) => {
-			update("themeDirection", lang === "ar" ? "rtl" : "ltr");
+			update("themeDirection", lang !== "ar" ? "ltr" : "ltr");
 		},
 		[update]
 	);

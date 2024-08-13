@@ -82,7 +82,11 @@ const NavVertical = ({ openNav, onCloseNav }: NavVerticalProps) => {
 						height: 1,
 						position: "fixed",
 						width: NAV.W_VERTICAL,
-						borderRight: (theme) => `dashed 1px ${theme.palette.divider}`,
+						borderRight: (theme) => `solid 1px ${theme.palette.divider}`,
+						backgroundColor: (theme) =>
+							theme.palette.mode === "dark"
+								? theme.palette.background.navs
+								: "inherit",
 					}}
 				>
 					{renderContent}

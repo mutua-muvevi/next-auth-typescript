@@ -43,7 +43,7 @@ const NavToggleButton = ({ sx, ...other } : NavToggleButtonProps) => {
 				position: "fixed",
 				left: NAV.W_VERTICAL - 12,
 				zIndex: theme.zIndex.appBar + 1,
-				border: `dashed 1px ${theme.palette.divider}`,
+				border: `solid 1px ${theme.palette.divider}`,
 				...bgBlur({ opacity: 0.48, color: theme.palette.background.default }),
 				"&:hover": {
 					bgcolor: "background.default",
@@ -60,7 +60,6 @@ const NavToggleButton = ({ sx, ...other } : NavToggleButtonProps) => {
 						: "eva:arrow-ios-forward-fill"
 				}
 			/>
-			
 		</IconButton>
 	);
 }

@@ -15,11 +15,11 @@ export const grey = {
 };
 
 export const primary = {
-	lighter: "#C8FAD6",
-	light: "#5BE49B",
-	main: "#00A76F",
-	dark: "#007867",
-	darker: "#004B50",
+	lighter: "#3596f7",
+	light: "#1b89f6",
+	main: "#027cf5",
+	dark: "#0270dd",
+	darker: "#0263c4",
 	contrastText: "#FFFFFF",
 };
 
@@ -124,9 +124,12 @@ export const palette = (mode: string) => {
 			disabled: grey[600],
 		},
 		background: {
-			paper: grey[800],
-			default: grey[900],
-			neutral: alpha(grey[500], 0.12),
+			paper: "#181a1b",
+			// default: "#0f0f0f",
+			default: "#101418",
+			// default: "#181a1b",
+			neutral: "#ccc",
+			navs: "#0c0d0f",
 		},
 		action: {
 			...base.action,

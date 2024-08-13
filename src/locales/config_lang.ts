@@ -1,55 +1,42 @@
 "use client";
 
 import merge from "lodash/merge";
-
-//date fns
+// date fns
 import {
-	arSA as arAdapter,
-	zhCN as zhCNAdapter,
-	enUS as enUSAdapter,
-	es as esESAdapter,
 	fr as frFRAdapter,
-	hi as hiINAdapter,
-	ja as jaAdapter,
-	ru as ruAdapter,
+	vi as viVNAdapter,
+	enUS as enUSAdapter,
+	zhCN as zhCNAdapter,
+	arSA as arSAAdapter,
 } from "date-fns/locale";
 
-// date pickers
+// date pickers (MUI)
 import {
 	enUS as enUSDate,
-	zhCN as zhCNDate,
-	jaJP as jaJPDate,
-	// hiIN as hiINDate,
-	esES as esESDate,
 	frFR as frFRDate,
-	ruRU as ruRUDate,
+	viVN as viVNDate,
+	zhCN as zhCNDate,
 } from "@mui/x-date-pickers/locales";
-
-// core mui
+// core (MUI)
 import {
-	arSA as arSACore,
 	enUS as enUSCore,
-	zhCN as zhCNCore,
-	jaJP as jaJPCore,
-	// hiIN as hiINCore,
-	esES as esESCore,
 	frFR as frFRCore,
-	ruRU as ruRUCore,
+	viVN as viVNCore,
+	zhCN as zhCNCore,
+	arSA as arSACore,
 } from "@mui/material/locale";
-
-//datagrid MUI
+// data grid (MUI)
 import {
-	arSD as arSDDatagrid,
 	enUS as enUSDataGrid,
-	zhCN as zhCNDataGrid,
-	jaJP as jaJPDataGrid,
-	// hiIN as hiINDataGrid,
-	esES as esESDataGrid,
 	frFR as frFRDataGrid,
-	ruRU as ruRUDataGrid,
-} from "@mui/x-data-grid/locales";
+	viVN as viVNDataGrid,
+	zhCN as zhCNDataGrid,
+	arSD as arSDDataGrid,
+} from "@mui/x-data-grid";
 
+// PLEASE REMOVE `LOCAL STORAGE` WHEN YOU CHANGE SETTINGS.
 // ----------------------------------------------------------------------
+
 export const allLangs = [
 	{
 		label: "English",
@@ -74,14 +61,14 @@ export const allLangs = [
 		},
 	},
 	{
-		label: "Spanish",
-		value: "es",
-		systemValue: merge(esESDate, esESDataGrid, esESCore),
-		adapterLocale: esESAdapter,
-		icon: "flagpack:es",
+		label: "Vietnamese",
+		value: "vi",
+		systemValue: merge(viVNDate, viVNDataGrid, viVNCore),
+		adapterLocale: viVNAdapter,
+		icon: "flagpack:vn",
 		numberFormat: {
-			code: "es-ES",
-			currency: "EUR",
+			code: "vi-VN",
+			currency: "VND",
 		},
 	},
 	{
@@ -96,51 +83,20 @@ export const allLangs = [
 		},
 	},
 	{
-		label: "Hindi",
-		value: "hi",
-		systemValue: merge(hiINAdapter),
-		adapterLocale: hiINAdapter,
-		icon: "flagpack:in",
-		numberFormat: {
-			code: "hi-IN",
-			currency: "INR",
-		},
-	},
-	{
-		label: "Japanese",
-		value: "ja",
-		systemValue: merge(jaAdapter, jaJPDataGrid, jaJPCore),
-		adapterLocale: jaAdapter,
-		icon: "flagpack:jp",
-		numberFormat: {
-			code: "ja-JP",
-			currency: "JPY",
-		},
-	},
-	{
-		label: "Russian",
-		value: "ru",
-		systemValue: merge(ruAdapter, ruRUDataGrid, ruRUCore),
-		adapterLocale: ruAdapter,
-		icon: "flagpack:ru",
-		numberFormat: {
-			code: "ru-RU",
-			currency: "RUB",
-		},
-	},
-	{
 		label: "Arabic",
 		value: "ar",
-		systemValue: merge(arAdapter, arSDDatagrid, arSACore),
-		adapterLocale: arAdapter,
+		systemValue: merge(arSDDataGrid, arSACore),
+		adapterLocale: arSAAdapter,
 		icon: "flagpack:sa",
 		numberFormat: {
-			code: "ar-SA",
-			currency: "SAR",
+			code: "ar",
+			currency: "AED",
 		},
-	}
+	},
 ];
 
-export const defaultLang = allLangs[0];
+export const defaultLang = allLangs[0]; // English
 
+// GET MORE COUNTRY FLAGS
 // https://icon-sets.iconify.design/flagpack/
+// https://www.dropbox.com/sh/nec1vwswr9lqbh9/AAB9ufC8iccxvtWi3rzZvndLa?dl=0
