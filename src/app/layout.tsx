@@ -1,3 +1,5 @@
+// i18n
+import "@/locales/i18n";
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -38,7 +40,7 @@ export default function RootLayout({
 							<MotionLazy>
 								<SnackbarProvider>
 									<SettingsDrawer />
-									<ProgressBar/>
+									<ProgressBar />
 									{children}
 								</SnackbarProvider>
 							</MotionLazy>

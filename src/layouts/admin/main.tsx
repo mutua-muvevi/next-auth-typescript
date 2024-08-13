@@ -6,6 +6,9 @@ import { useSettingsContext } from "@/components/settings";
 
 import { NAV, HEADER } from "../config_layout";
 
+import i18n from "i18next";
+import { useTranslation } from "react-i18next";
+
 // ----------------------------------------------------------------------
 
 const SPACING = 8;
@@ -24,6 +27,10 @@ const Main = ({ children, sx, ...other }: MainProps) => {
 	const isNavHorizontal = settings.themeLayout === "horizontal";
 
 	const isNavMini = settings.themeLayout === "mini";
+	console.log("I18NEXT", i18n)
+	
+	const translate = useTranslation()
+	console.log("REACT I18NEXT", translate)
 
 	if (isNavHorizontal) {
 		return (

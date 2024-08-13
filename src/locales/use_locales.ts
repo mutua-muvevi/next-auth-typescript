@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 import { localStorageGetItem } from "@/utils/storage_available";
@@ -21,7 +21,7 @@ export const useLocales = () => {
 		allLangs,
 		currentLang,
 	};
-}
+};
 
 // ----------------------------------------------------------------------
 
@@ -31,7 +31,7 @@ export const useTranslate = () => {
 	const settings = useSettingsContext();
 
 	const onChangeLang = useCallback(
-		(newlang: any) => {
+		(newlang : string) => {
 			i18n.changeLanguage(newlang);
 			settings.onChangeDirectionByLang(newlang);
 		},
