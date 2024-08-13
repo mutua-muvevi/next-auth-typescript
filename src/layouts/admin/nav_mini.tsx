@@ -43,7 +43,7 @@ const NavMini = () => {
 						backgroundColor: (theme) =>
 							theme.palette.mode === "dark"
 								? theme.palette.background.navs
-								: theme.palette.primary.main,
+								: "inherit",
 					...hideScroll.x,
 				}}
 			>
