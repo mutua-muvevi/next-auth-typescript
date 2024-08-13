@@ -10,7 +10,6 @@ import { useResponsive } from "@/hooks/use_responsive";
 import { bgBlur } from "@/themes/css";
 
 import Logo from "@/components/logo";
-import SvgColor from "@/components/svg_color";
 import { useSettingsContext } from "@/components/settings";
 
 import Searchbar from "../common/searchbar";
@@ -20,6 +19,7 @@ import AccountPopover from "../common/account_popover";
 import ContactsPopover from "../common/contacts_popover";
 import LanguagePopover from "../common/language_popover";
 import NotificationsPopover from "../common/notifications_popover";
+import Iconify from "@/components/iconify";
 
 // ----------------------------------------------------------------------
 
@@ -48,7 +48,10 @@ const Header = ({ onOpenNav }: HeaderProps) => {
 
 			{!lgUp && (
 				<IconButton onClick={onOpenNav}>
-					<SvgColor src="/assets/icons/navbar/ic_menu_item.svg" />
+					<Iconify
+						icon="eva:menu-2-fill"
+						width={20}
+						/>
 				</IconButton>
 			)}
 
@@ -93,7 +96,10 @@ const Header = ({ onOpenNav }: HeaderProps) => {
 					}),
 					...(isNavHorizontal && {
 						width: 1,
-						bgcolor: "background.default",
+						bgcolor:
+							theme.palette.mode == "dark"
+								? theme.palette.background.navs
+								: "background.default",
 						height: HEADER.H_DESKTOP_OFFSET,
 						borderBottom: `dashed 1px ${theme.palette.divider}`,
 					}),
@@ -107,6 +113,10 @@ const Header = ({ onOpenNav }: HeaderProps) => {
 				sx={{
 					height: 1,
 					px: { lg: 5 },
+					bgcolor:
+							theme.palette.mode == "dark"
+								? theme.palette.background.navs
+								: "background.default",
 				}}
 			>
 				{renderContent}

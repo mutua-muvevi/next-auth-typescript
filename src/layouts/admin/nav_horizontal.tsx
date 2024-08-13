@@ -30,7 +30,7 @@ const NavHorizontal = () => {
 			sx={{
 				top: HEADER.H_DESKTOP_OFFSET,
 			}}
-		>
+			>
 			<Toolbar
 				sx={{
 					...bgBlur({
@@ -52,6 +52,7 @@ const NavHorizontal = () => {
 						}}
 						sx={{
 							...theme.mixins.toolbar,
+							
 						}}
 					/>
 				</Scrollbar>
