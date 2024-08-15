@@ -22,7 +22,6 @@ const AdminPage = () => {
 						))
 					}
 				</Grid>
-			{console.log("Theme", theme)}
 			</div>
 		</Container>
 	);
