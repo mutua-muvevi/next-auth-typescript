@@ -22,8 +22,6 @@ const AdminPage = () => {
 						))
 					}
 				</Grid>
-				{console.log("theme", theme)}
-				{JSON.stringify(theme.breakpoints, null, 2)}
 			</div>
 		</Container>
 	);
