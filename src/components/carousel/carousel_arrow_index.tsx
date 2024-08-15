@@ -60,7 +60,7 @@ const CarouselArrowIndex = ({
 	return (
 		<StyledRoot sx={sx} {...other}>
 			<StyledIconButton color="inherit" onClick={onPrev}>
-				<LeftIcon icon={icon} isRTL={isRTL} />
+				<LeftIcon isRTL={isRTL} />
 			</StyledIconButton>
 
 			<Typography variant="subtitle2" component="span" sx={{ mx: 0.25 }}>
@@ -68,7 +68,7 @@ const CarouselArrowIndex = ({
 			</Typography>
 
 			<StyledIconButton color="inherit" onClick={onNext}>
-				<RightIcon icon={icon} isRTL={isRTL} />
+				<RightIcon isRTL={isRTL} />
 			</StyledIconButton>
 		</StyledRoot>
 	);
