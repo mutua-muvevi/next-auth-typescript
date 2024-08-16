@@ -10,12 +10,13 @@ interface StyledIconButtonProps {
 	filled: boolean;
 	shape: string;
 	hasChild: boolean;
+	theme: any
 }
 
 const StyledIconButton = styled(IconButton, {
 	shouldForwardProp: (prop?: string) =>
 		prop !== "filled" && prop !== "hasChild" && prop !== "shape",
-})(({ filled, shape, hasChild, theme }) => ({
+})(({ filled, shape, hasChild, theme } : StyledIconButtonProps) => ({
 	color: "inherit",
 	transition: theme.transitions.create("all", {
 		duration: theme.transitions.duration.shorter,
