@@ -7,7 +7,7 @@ const COLORS = ["info", "success", "warning", "error"];
 
 // ----------------------------------------------------------------------
 
-export const alert = (theme: object) => {
+export const alert = (theme: any) => {
 	const lightMode = theme.palette.mode === "light";
 
 	const rootStyles = (ownerState: any) => {

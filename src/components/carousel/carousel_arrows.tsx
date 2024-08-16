@@ -4,13 +4,27 @@ import { alpha, styled, useTheme } from "@mui/material/styles";
 //
 
 import { LeftIcon, RightIcon } from "./arrow_icons";
+import { ThemePalette } from "@/themes/types/palette";
 
 // ----------------------------------------------------------------------
+interface StyledIconButtonProps {
+	filled: boolean;
+	shape: string;
+	hasChild: boolean;
+	theme: {
+		transitions: any
+		palette: ThemePalette
+		shape: {
+			borderRadius: number;
+		};
+		spacing: (...args: number[]) => number | string;
+	}
+}
 
 const StyledIconButton = styled(IconButton, {
-	shouldForwardProp: (prop: any) =>
+	shouldForwardProp: (prop?: any) =>
 		prop !== "filled" && prop !== "hasChild" && prop !== "shape",
-})(({ filled, shape, hasChild, theme }) => ({
+})(({ filled, shape, hasChild, theme } : StyledIconButtonProps) => ({
 	color: "inherit",
 	transition: theme.transitions.create("all", {
 		duration: theme.transitions.duration.shorter,
@@ -87,7 +101,7 @@ export default function CarouselArrows({
 							...leftButtonProps?.sx,
 						}}
 					>
-						<LeftIcon icon={icon} isRTL={isRTL} />
+						<LeftIcon  isRTL={isRTL} />
 					</StyledIconButton>
 				)}
 
@@ -105,7 +119,7 @@ export default function CarouselArrows({
 							...rightButtonProps?.sx,
 						}}
 					>
-						<RightIcon icon={icon} isRTL={isRTL} />
+						<RightIcon  isRTL={isRTL} />
 					</StyledIconButton>
 				)}
 			</Stack>
@@ -126,7 +140,7 @@ export default function CarouselArrows({
 				onClick={onPrev}
 				{...leftButtonProps}
 			>
-				<LeftIcon icon={icon} isRTL={isRTL} />
+				<LeftIcon  isRTL={isRTL} />
 			</StyledIconButton>
 
 			<StyledIconButton
@@ -135,7 +149,7 @@ export default function CarouselArrows({
 				onClick={onNext}
 				{...rightButtonProps}
 			>
-				<RightIcon icon={icon} isRTL={isRTL} />
+				<RightIcon  isRTL={isRTL} />
 			</StyledIconButton>
 		</Stack>
 	);

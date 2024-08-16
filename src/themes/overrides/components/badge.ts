@@ -2,7 +2,7 @@ import { badgeClasses } from "@mui/material/Badge";
 
 // ----------------------------------------------------------------------
 
-export const badge = (theme: object) => {
+export const badge = (theme: any) => {
 	return {
 		MuiBadge: {
 			styleOverrides: {

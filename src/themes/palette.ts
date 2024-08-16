@@ -108,6 +108,7 @@ export const palette = (mode: string) => {
 			paper: "#FFFFFF",
 			default: "#FFFFFF",
 			neutral: grey[200],
+			navs: "#FFFFFF"
 		},
 		action: {
 			...base.action,

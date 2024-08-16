@@ -3,7 +3,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 
 // ----------------------------------------------------------------------
 
-export const useResponsive = (query: string, start: any, end: any | undefined) => {
+export const useResponsive = (query?: string, start?: any, end?: any | undefined) => {
 	const theme = useTheme();
 
 	const mediaUp = useMediaQuery(theme.breakpoints.up(start));
